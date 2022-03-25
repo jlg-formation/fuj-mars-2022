@@ -4,3 +4,14 @@ services:
     build: .
     ports:
       - "55777:3000"
+    links:
+      - mongo
+  mongojlg:
+    image: "mongo"
+    container_name: mongo
+    ports:
+      - "55888:27017"
+    volumes:
+      - "mongodata:/data/db"
+volumes:
+  mongodata:
