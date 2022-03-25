@@ -41,6 +41,6 @@ docker-compose up -d
 ```
 
 ```sh
-# Start in background
+# Stop in background
 docker-compose down
 ```
