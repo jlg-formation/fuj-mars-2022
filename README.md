@@ -2,17 +2,17 @@
 
 ```sh
 # Build an image
-docker build . -t jlguenego/node-web-app
+docker build . -t jlguenego/ma-super-app
 
 # List images
 docker images
 
 # Run an image
-docker run -p 49160:8080 -d jlguenego/node-web-app
+docker run -p 55666:3000 -d jlguenego/ma-super-app
 
-# List the started images (containers)
+# List the started images (containers) to see the container ids.
 docker ps
 
-# Go inside the container
+# Open a shell inside the container
 docker exec -it <container_id> /bin/bash
 ```
