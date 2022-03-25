@@ -26,8 +26,8 @@ docker kill <container-ids>
 docker kill $(docker ps -q)
 
 # Remove the container
-docker rm <container-ids>
-docker rm $(docker ps -a -q)
+docker rm -f <container-ids>
+docker rm -f $(docker ps -a -q)
 
 # Open a shell inside the container
 docker exec -it <container_id> /bin/bash
