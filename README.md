@@ -1,5 +1,7 @@
 # Docker instructions
 
+## Manual
+
 ```sh
 # Build an image
 docker build . -t jlguenego/ma-super-app
@@ -15,4 +17,11 @@ docker ps
 
 # Open a shell inside the container
 docker exec -it <container_id> /bin/bash
+```
+
+## Docker Compose
+
+```sh
+# Start in background
+docker compose up -d
 ```
